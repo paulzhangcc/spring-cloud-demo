@@ -1,0 +1,24 @@
+server:
+  port: 9000
+  tomcat:
+    accesslog:
+      enabled: true
+    remote-ip-header: x-forwarded-for
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instanceId: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+zuul:
+  ignoredServices: '*'
+  routes:
+    controller: /api/**
+
+
+
+
