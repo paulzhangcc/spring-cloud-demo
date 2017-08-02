@@ -9,7 +9,8 @@ import rx.functions.Action1;
 public class demo {
     public static void main(String[] args) {
         //hello("world-one","world-two");
-        flatMap();
+        //flatMap();
+        System.out.println(11111);
     }
 
     public static void hello(String... names) {

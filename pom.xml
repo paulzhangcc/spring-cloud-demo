@@ -20,6 +20,7 @@
 		<module>paulzhangcc-spring-test</module>
 		<module>paulzhangcc-stream</module>
 		<module>paulzhangcc-elasticsearch</module>
+		<module>paulzhangcc-starter-test</module>
 
 		
 
